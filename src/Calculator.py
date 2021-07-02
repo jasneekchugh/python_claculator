@@ -3,14 +3,14 @@ def addition(a, b):
 
 
 def subtraction(a, b):
-    return a - b
+    return b - a
 
 
 def multiplication(a, b):
     return a * b
 
 
-def division(a, b):
+def div(a, b):
     return round((b / a), 9)
 
 
@@ -32,7 +32,7 @@ class Calculator:
         self.result = addition(a, b)
         return self.result
 
-    def subtract(self, a, b):
+    def sub(self, a, b):
         self.result = subtraction(a, b)
         return self.result
 
@@ -40,8 +40,8 @@ class Calculator:
         self.result = multiplication(a, b)
         return self.result
 
-    def division(self, a, b):
-        self.result = division(a, b)
+    def div(self, a, b):
+        self.result = div(a, b)
         return self.result
 
     def sqrt(self, a):
